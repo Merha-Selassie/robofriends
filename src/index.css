@@ -4,3 +4,9 @@ body {
   font-family: sans-serif;
   background: linear-gradient(to left, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
+
+.info {
+	float: right;
+	text-align: left;
+	padding: 50px;
+}

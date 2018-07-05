@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Card from './Card';
 import { connect } from 'react-redux';
 import { requestRobot } from '../actions';
+import DetailCard from './DetailCard';
 let id = '';
 const mapStateToProps = (state, props) => {
 	
@@ -29,18 +30,11 @@ class Detail extends Component {
 	render() {
 
 		const { robot, isPending } = this.props;
-	
+		console.log('robot address');
+		console.log(robot.company);
 		return isPending ?
 			<h1 className="tc fl w-100 pv7">Loading</h1> : 
-			(
-			<div>
-				<Card 
-					key={robot.id} 
-					id={robot.id} 
-					name={robot.name} 
-					email={robot.email}/>
-			</div>
-		);
+			<DetailCard robot={robot} />
 	}
 	
 }
