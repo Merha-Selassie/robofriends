@@ -3,7 +3,7 @@ import React from 'react';
 const DetailCard = ({ robot }) => {
 
 	return (
-		<div className="tc bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5">
+		<div className="mw5 mw7-ns center bg-light-green pa3 ma5 grow br3 shadow-5 ph5-ns">
 			
 			<div>
 				<h2>{robot.name}</h2>
