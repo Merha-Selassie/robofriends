@@ -1,11 +1,10 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import { requestRobots, setSearchField } from '../Actions';
 import CardList from './CardList';
-import SearchBox from './SearchBox';
-import Scroll from './Scroll';
-import Header from './Header';
-import { setSearchField, requestRobots } from '../actions';
 import ErrorBoundary from './ErrorBoundary';
+import Scroll from './Scroll';
+import SearchBox from './SearchBox';
 
 
 
@@ -45,7 +44,7 @@ class Home extends Component {
 			<h1 className="tc fl w-100 pv7">Loading</h1> : 
 			(
 				<div className='tc'>
-					<Header />
+					{/* <Header /> */}
 					<SearchBox searchChange={onSearchChange}/>
 					<Scroll>
 						<ErrorBoundary>
